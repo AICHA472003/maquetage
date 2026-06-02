@@ -1,0 +1,209 @@
+/* ==========================================================================
+   1. Style l-3am dyal l-page (Global Styles)
+   ========================================================================== */
+   body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #EFF0F7; /* Khalfya mriha l-l3in bhal li f figma */
+    color: #2D3142;           /* Ktaba b gris ghameq bsh tkoun sahla f l-qira'a */
+}
+
+h1, h2, h3 {
+    color: #1A1C23;
+    margin-top: 0;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 2px solide #8B5A2B;
+    padding-bottom: 10px;
+}
+
+/* ==========================================================================
+   2. Barre de Navigation (Menu foqani)
+   ========================================================================== */
+nav {
+    text-align: center;
+    background: #FFFFFF;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+nav a {
+    color: #2D3142;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #8B5A2B; /* Lon kithwwal mli t-fout 3lih l-souris */
+}
+
+/* ==========================================================================
+   3. Khanyat dyal l-wasafat (Recipe Cards)
+   ========================================================================== */
+.recipe-section {
+    background: #FFFFFF; /* Cards b l-byad bsh ikoun contrast m3a l-khalfya */
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 12px; /* Jnab mdwwrin khfif bhal l-modern design */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Kheyal khfif bsh tban kharja */
+}
+
+.recipe-section h3 {
+    color: #8B5A2B; /* Lon principal dyal l-3anawin d l-wasafat */
+    border-bottom: 1px solid #EFF0F7;
+    padding-bottom: 8px;
+    font-size: 1.3rem;
+}
+
+/* Structuration dyal l-maqadir o l-tariqa */
+p strong {
+    color: #1A1C23;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* ==========================================================================
+   4. Les Images o l-Bouton (UI Elements)
+   ========================================================================== */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 8px; /* Jnab d l-tsawer mhawrin */
+}
+
+/* Banner kabira dyal l-foq */
+img[alt="Enfants qui cuisinent"] {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+}
+
+/* Les boutons d l-khidma (Suivant) */
+button {
+    background-color:#8B5A2B; /* Zor dyal action clear */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s  easeback;
+    display: block;
+    margin: 15px 0;
+}
+
+button:hover {
+    background-color: #8B5A2B; /* Ki-ghmaq khfif mli t-cliki */
+}
+/* ==========================================================================
+   Style l-khass b maquette Contact (iPhone Layout)
+   ========================================================================== */
+
+/* 1. L-container l-kabir (Khalfya gris khfif o bla khatt zreq) */
+.contact-container {
+    max-width: 430px; /* Qyas mkhyer bsh i-ji mfehs bhal iPhone Pro Max */
+    margin: 20px auto;
+    background-color: #EFF0F7; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative; /* Darori bsh l-decor i-bqa f blasto */
+    overflow: hidden;
+    min-height: 580px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05); /* Kheyal khfif l-container */
+}
+
+/* 2. L-barre d l-contact l-foqanya l-qahwya */
+.contact-header {
+    background-color: #B48A66; /* Nafees l-lon l-qahwi d l-maquette */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 25px 10px; /* Ataha l-ard li f l-tswira */
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: lowercase; /* Ktaba sghira "contact" bhal f figma */
+    letter-spacing: 0.5px;
+}
+
+/* 3. L-card l-byda lli f l-wost (Zayda l-ard hna) */
+.contact-card {
+    background-color: #FFFFFF;
+    width: 80%;
+    margin: 40px auto 0 auto;
+    padding: 30px 15px;
+    border-radius: 2px;
+    z-index: 2;
+    position: relative;
+}
+
+/* Title: Contacter_nous */
+.contact-card h2 {
+    font-size: 1.1rem;
+    color: #000000;
+    font-weight: 900; /* Ktaba khwya bzaf */
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+/* 4. Khanyat dyal l-ma3loumat (WhatsApp & Facebook) */
+.contact-info {
+    background-color: #EFF2F9; /* Lon l-khalfya d l-khanyat */
+    padding: 18px 10px;
+    margin-bottom: 30px; /* Khwa mzyan binat-hom */
+    border-radius: 0px;
+    color: #000000;
+    font-weight: bold; /* Ktaba bold bhal l-maquette */
+    font-size: 0.85rem;
+    text-align: center; /* M-centrin f l-wost nishan */
+}
+
+/* Akhir khanya ma-andhsh margin mn l-taht */
+.contact-info:last-child {
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
+   5. Ndmta d l-blasa d l-tsawer (Deco Icons)
+   ========================================================================== */
+.deco-icon {
+    position: absolute;
+    z-index: 3; /* Bsh i-jiw foq l-khanyat bhal f figma */
+}
+
+/* L-gassa (Toque) - Foq 3la l-iswbar */
+.icon-hat {
+    top: 105px;
+    left: 20px;
+    width: 38px;
+}
+
+/* L-mdlek (Rouleau) - Foq 3la l-imn */
+.icon-roller {
+    top: 100px;
+    right: 15px;
+    width: 65px;
+}
+
+/* L-khallat (Whisk) - L-taht 3la l-iswbar */
+.icon-whisk {
+    bottom: 25px;
+    left: 20px;
+    width: 42px;
+}
+
+/* L-jib dyal l-la-creme (Poche) - L-taht 3la l-imn */
+.icon-bag {
+    bottom: 25px;
+    right: 15px;
+    width: 40px;
+}
